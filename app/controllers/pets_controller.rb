@@ -11,7 +11,11 @@ class PetsController < ApplicationController
   end
 
   post '/pets' do 
-
+    if params[:owner_id]
+      @pet = Pet.create(:name => params[:name] :owner_id => params[:owner_id]
+    else
+      Owner.
+    end 
     redirect to "pets/#{@pet.id}"
   end
 
