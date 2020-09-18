@@ -4,15 +4,17 @@
   <label>Pet Name:</label>
   <br>
   <input type="text" name="pet[name]" id="pet_name">Pet name:</input>
-  <input type="text" name="owner[id]" id="owner_id">Owner ID:</input>
 
 <h3>Existing Owners</h3>
 <% @owners.each do |owner| %>
-<input type="radio" name="owner[owner_id]" id="<%= owner.id %>" value="<%= owner.id %>"><%= owner.name %></input>
+<input type="radio" name="owner[id]" id="<%= owner.id %>" value="<%= owner.id %>"><%= owner.name %></input>
+
 <% end %>
 <br>
 
+
 <h3>New Owners</h3>
+<input type="text" name="owner[id]" id="owner_id">Owner ID:</input>
 <input type="text" name="owner[name]" id="owner_name">
 
 <input type="submit" value="Create Pet" id="Submit">
