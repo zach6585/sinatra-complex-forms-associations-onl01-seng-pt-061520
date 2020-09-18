@@ -1,6 +1,8 @@
 <h1>Create a new Pet</h1>
 
 <form method="post" action="/pets">
+  <label>Pet Name:</label>
+  <br>
   <input type="text" name="pet[name]" id="pet_name">Pet name:</input>
   <input type="text" name="owner[id]" id="owner_id">Owner ID:</input>
 
@@ -11,7 +13,7 @@
 <br>
 
 <h3>New Owners</h3>
-<input type="text" name="owner[name]"
+<input type="text" name="owner[name]" id="owner_name">
 
 <input type="submit" value="Create Pet" id="Submit">
 </form>
